@@ -30,3 +30,13 @@ lt = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 lt1 = list(map(lambda x: x if x % 2 == 0 else -x, lt))
 
 print(lt1)  # [-1, 2, -3, 4, -5, 6, -7, 8, -9]
+
+print()
+
+# 4️⃣ Now sorting nested list on the basis of addition of a[0]+a[1]
+
+ls = [[4, 2, "six"], [1, 4, "five"], [2, 2, "four"]]
+
+ls1 = sorted(ls, key=lambda x: x[0] + x[1])
+
+print(ls1)  # [[2, 2, 'four'], [1, 4, 'five'], [4, 2, 'six']]
