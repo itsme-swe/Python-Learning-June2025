@@ -3,14 +3,13 @@
 lst = [2, 4, 6, 8, 10]
 
 try:
-    idx = 6
+    idx = 9
     print(lst[idx])
-except IndexError:
-    print("Invalid Index")
-except TypeError:
-    print("Index should be integer")
+except IndexError as msg:
+    print(msg)
+except TypeError as msg:
+    print(msg)
 except:
     print("Some error")
 
 print("End of program")
-
