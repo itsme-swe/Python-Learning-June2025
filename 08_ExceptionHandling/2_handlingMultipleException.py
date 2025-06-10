@@ -3,11 +3,9 @@
 lst = [2, 4, 6, 8, 10]
 
 try:
-    idx = 9
+    idx = 2
     print(lst[idx])
-except IndexError as msg:
-    print(msg)
-except TypeError as msg:
+except (IndexError, TypeError) as msg:
     print(msg)
 except:
     print("Some error")
