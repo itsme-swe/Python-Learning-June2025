@@ -1,6 +1,6 @@
 class Rectangle:
 
-    count = 0
+    count = 0  # class / static variable
 
     def __init__(self, l, b):
         self.length = l
