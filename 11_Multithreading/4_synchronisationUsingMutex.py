@@ -1,6 +1,8 @@
 from threading import *
 from time import *
 
+l = Lock()
+
 
 def display(str1):
     l.acquire()
@@ -10,7 +12,6 @@ def display(str1):
     l.release()
 
 
-l = Lock()
 t1 = Thread(target=display, args=("HELLO WORLD",))
 
 t2 = Thread(target=display, args=(" You are welcome",))
