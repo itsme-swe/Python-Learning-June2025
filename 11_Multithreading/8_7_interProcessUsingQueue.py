@@ -2,9 +2,10 @@ from threading import *
 from time import *
 from queue import *
 
+# Create a thread-safe Queue which acts as a message queue between producer and consumer
 q = Queue()
 
-
+# Function for the producer thread
 def producer(que):
     i = 1
     while True:
@@ -13,7 +14,7 @@ def producer(que):
         sleep(0.8)
         i += 1
 
-
+# Function for the consumer thread
 def consumer(que):
     while True:
         x = que.get()
