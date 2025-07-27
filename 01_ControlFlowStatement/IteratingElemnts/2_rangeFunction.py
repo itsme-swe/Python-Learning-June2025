@@ -14,3 +14,4 @@ for i in range(len(arr)):
     print(arr[i], end=" ")
 
 # 2 4 6 8 10
+
