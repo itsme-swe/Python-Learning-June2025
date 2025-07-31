@@ -15,3 +15,19 @@ for i in range(len(arr)):
 
 # 2 4 6 8 10
 
+print()
+
+# ◽ Iterating over matrix
+
+mtrx = [[2, 4, 6], [1, 3, 5], [7, 8, 9]]
+
+for i in range(len(mtrx)):
+    for j in range(len(mtrx[i])):
+        print(mtrx[i][j], end=" ")
+    print()
+
+"""
+2 4 6      
+1 3 5      
+7 8 9
+"""
